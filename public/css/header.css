@@ -1,0 +1,122 @@
+header {
+  /* padding: top right bottom left */
+  padding: 50px 50px 20px 50px;
+}
+
+.header-content {
+  margin: 0;
+  position: relative;
+}
+
+#taskInput {
+  padding: 10px 15px;
+  font-size: 18px;
+  width: 100%;
+  padding-left: 55px;
+  border: 1px solid #ccc;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 25px;
+}
+
+#taskInput:hover {
+  /* outline: px solid blueviolet; */
+  background-color: rgb(234, 237, 238);
+}
+
+#taskInput:focus {
+  outline: 2px solid blueviolet;
+  background-color: rgb(234, 237, 238);
+}
+
+#taskList li {
+  list-style-type: none;
+}
+
+#add-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0px 20px;
+  border: none;
+  height: 100%;
+  background: url("../icons/add.svg") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+  background-color: black;
+  border-right: 1px solid #ccc;
+  background-size: 30px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+#add-btn:focus {
+  outline: none;
+}
+
+nav {
+  padding: 0px 50px;
+  margin: 10px 0px;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-section .btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.filter-section .btn:focus {
+  background-color: #555;
+  outline-color: blueviolet;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 50px 20px 20px 20px;
+  }
+
+  nav {
+    padding: 0px 20px;
+  }
+
+  .filter-section {
+    display: flex;
+    margin: 0px 20px;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .filter-section .btn {
+    padding: 8px 15px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  nav {
+    padding: 0;
+  }
+
+  .filter-section {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .filter-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

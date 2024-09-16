@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager App</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/actions.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <input type="text" id="taskInput" placeholder="Enter your task here" />
+        <input type="submit" id="add-btn" value=" " />
+      </div>
+    </header>
+
+    <nav>
+      <div class="filter-section">
+        <button id="all" class="all btn">All</button>
+        <button id="pending" class="pending btn">Pending</button>
+        <button id="completed" class="completed btn">Completed</button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="content-container">
+        <ul id="taskList">
+          
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        &copy; <%= new Date().getFullYear() %> Arjun Banerjee
+      </div>
+    </footer>
+
+  </body>
+  <script src="/js/script.js"></script>
+</html>

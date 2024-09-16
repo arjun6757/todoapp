@@ -1,0 +1,14 @@
+.action-btn {
+    background-color: #323230;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+#btn-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
